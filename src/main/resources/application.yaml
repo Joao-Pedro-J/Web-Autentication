@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: 'web_autentication'
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernates:
+        format_sql: true
+
+
+
